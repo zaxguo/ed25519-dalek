@@ -29,7 +29,7 @@ features = ["nightly", "batch"]
 
 [dependencies]
 clear_on_drop = { version = "0.2" }
-merlin = { version = "1", default-features = false, optional = true, git = "https://github.com/isislovecruft/merlin", branch = "develop" }
+#merlin = { version = "1", default-features = false, optional = true, git = "https://github.com/isislovecruft/merlin", branch = "develop" }
 rand = { git = "https://github.com/mesalock-linux/rand-sgx.git", tag = "sgx_1.1.2", optional = true}
 rand_core = { git = "https://github.com/mesalock-linux/rand-sgx.git", tag = "sgx_1.1.2", optional = true}
 serde = { git = "https://github.com/mesalock-linux/serde-sgx.git", tag = "sgx_1.1.2", feature = ["derive"], optional = true }
@@ -54,9 +54,9 @@ default = ["std", "u64_backend"]
 std = ["curve25519-dalek/std", "sha2/std", "rand/std"]
 alloc = ["curve25519-dalek/alloc", "rand/alloc"]
 nightly = ["curve25519-dalek/nightly", "clear_on_drop/nightly", "rand/nightly"]
-batch = ["merlin", "rand"]
+#batch = ["merlin", "rand"]
 # This feature enables deterministic batch verification.
-batch_deterministic = ["merlin", "rand", "rand_core"]
+#batch_deterministic = ["merlin", "rand", "rand_core"]
 asm = ["sha2/asm"]
 # This features turns off stricter checking for scalar malleability in signatures
 legacy_compatibility = []
