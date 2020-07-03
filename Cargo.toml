@@ -32,7 +32,7 @@ clear_on_drop = { version = "0.2" }
 merlin = { version = "2", default-features = false, optional = true, git = "https://github.com/isislovecruft/merlin", branch = "develop" }
 rand = { git = "https://github.com/mesalock-linux/rand-sgx.git", tag = "sgx_1.1.2", optional = true}
 rand_core = { git = "https://github.com/mesalock-linux/rand-sgx.git", tag = "sgx_1.1.2", optional = true}
-serde = { git = "https://github.com/mesalock-linux/serde-sgx.git", tag = "sgx_1.1.2", feature = ["derive"], optional = true }
+serde = { git = "https://github.com/mesalock-linux/serde-sgx.git", version = "1.0", feature = ["derive"], optional = true }
 sha2 = { version = "0.8", default-features = false }
 
 [dev-dependencies]
